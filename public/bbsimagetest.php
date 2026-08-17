@@ -1,5 +1,4 @@
-<?php
-$dbh = new PDO('mysql:host=mysql;dbname=example_db', 'root', '');
+('mysql:host=mysql;dbname=example_db', 'root', '');
 
 if (isset($_POST['body'])) {
   // POSTで送られてくるフォームパラメータ body がある場合
@@ -41,6 +40,9 @@ if (isset($_POST['body'])) {
 $select_sth = $dbh->prepare('SELECT * FROM bbs_entries ORDER BY created_at DESC');
 $select_sth->execute();
 ?>
+<head>
+  <title>画像投稿できる掲示板</title>
+</head>
 
 <!-- フォームのPOST先はこのファイル自身にする -->
 <form method="POST" action="./bbsimagetest.php" enctype="multipart/form-data">
