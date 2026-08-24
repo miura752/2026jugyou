@@ -96,4 +96,4 @@ ALTER TABLE `bbs_entries` ADD COLUMN image_filename TEXT DEFAULT NULL;
 
 ## 動作確認
 
-http://3.85.93.19/kadai.php
+http://54.87.51.209/kadai.php
