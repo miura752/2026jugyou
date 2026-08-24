@@ -42,9 +42,6 @@ $select_sth = $dbh->prepare('SELECT * FROM bbs_entries ORDER BY created_at DESC'
 $select_sth->execute();
 ?>
 
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<style>textarea, img { max-width: 100%; }</style>
-
 <!-- フォームのPOST先はこのファイル自身にする -->
 <form method="POST" action="./kadai.php" enctype="multipart/form-data">
   <textarea name="body" required></textarea>
