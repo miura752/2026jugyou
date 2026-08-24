@@ -51,6 +51,8 @@ curl -L $BUILDX_URL -o ~/.docker/cli-plugins/docker-buildx
 chmod +x ~/.docker/cli-plugins/docker-buildx
 ```
 
+
+
 ## docker compose 
 ```
 mkdir dockertest
@@ -76,10 +78,12 @@ vim public/kadai.php
 
 ## Docker コンテナの起動
 ```
-docker compose up -d
+docker compose up
 ```
-
-
+## データベースの初期設定
+```
+docker compose exec mysql mysql example_db
+```
 ## データベースの初期テーブル作成
 ```
 docker compose exec mysql mysql example_db
